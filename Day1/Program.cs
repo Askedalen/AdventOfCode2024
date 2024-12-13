@@ -31,7 +31,7 @@ static int SolvePart1(List<int> firstList, List<int> secondList)
         .Aggregate(0, (total, i) =>
             total + Math.Abs(firstListOrdered[i] - secondListOrdered[i]));
 
-    // Solution with for loop instead. Better readability?
+    // Solution with for loop instead. Better readability? Faster?
     //List<int> distances = [];
     //for (int i = 0; i < firstListOrdered.Count; i++)
     //{
